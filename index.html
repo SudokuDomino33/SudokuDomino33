@@ -27,9 +27,7 @@
       margin: auto;
     }
     header {
-      margin-bottom: 10px;
-      position: relative;
-      text-align: center;
+      margin-bottom: 30px;
     }
     .banner {
       width: 100%;
@@ -37,22 +35,11 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    .banner-buttons {
-      margin-top: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-    .banner-buttons p {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .button-row {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
+    @media (min-width: 768px) {
+      .banner {
+        max-height: none;
+        object-fit: contain;
+      }
     }
     h1, h2.section-title {
       font-size: 22px;
@@ -80,7 +67,7 @@
     }
     .button-img {
       height: 120px;
-      margin: 5px;
+      margin: 10px 10px 10px 0;
       vertical-align: middle;
       border: none;
     }
@@ -94,17 +81,6 @@
   <div class="container">
     <header>
       <img src="assets/images/banner_domino33.png" alt="Bienvenue Domino33" class="banner">
-      <div class="banner-buttons">
-        <p>Retrouvez toutes mes vidéos sur YouTube et découvrez mon livre sur Amazon !</p>
-        <div class="button-row">
-          <a href="https://www.youtube.com/@domino3348" target="_blank">
-            <img src="assets/images/youtube_subscribe.png" alt="S'abonner à YouTube" class="button-img">
-          </a>
-          <a href="https://www.amazon.fr/dp/2959903307" target="_blank">
-            <img src="assets/images/bouton_amazon_fr.png" alt="Voir le livre sur Amazon" class="button-img">
-          </a>
-        </div>
-      </div>
     </header>
 
     <section>
