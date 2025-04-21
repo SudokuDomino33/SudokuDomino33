@@ -27,12 +27,7 @@
       margin: auto;
     }
     header {
-      margin-bottom: 10px;
-      position: relative;
-      text-align: center;
-    }
-    .banner-wrapper {
-      position: relative;
+      margin-bottom: 30px;
     }
     .banner {
       width: 100%;
@@ -40,25 +35,11 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    .banner-buttons-overlay {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 10px 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-    .banner-buttons-overlay p {
-      font-weight: bold;
-      margin: 0 0 10px;
-    }
-    .button-row {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
+    @media (min-width: 768px) {
+      .banner {
+        max-height: none;
+        object-fit: contain;
+      }
     }
     h1, h2.section-title {
       font-size: 22px;
@@ -86,7 +67,7 @@
     }
     .button-img {
       height: 120px;
-      margin: 5px;
+      margin: 10px 10px 10px 0;
       vertical-align: middle;
       border: none;
     }
@@ -99,20 +80,7 @@
 <body>
   <div class="container">
     <header>
-      <div class="banner-wrapper">
-        <img src="assets/images/banner_domino33.png" alt="Bienvenue Domino33" class="banner">
-        <div class="banner-buttons-overlay">
-          <p>Retrouvez toutes mes vidéos sur YouTube et découvrez mon livre sur Amazon !</p>
-          <div class="button-row">
-            <a href="https://www.youtube.com/@domino3348" target="_blank">
-              <img src="assets/images/youtube_subscribe.png" alt="S'abonner à YouTube" class="button-img">
-            </a>
-            <a href="https://www.amazon.fr/dp/2959903307" target="_blank">
-              <img src="assets/images/bouton_amazon_fr.png" alt="Voir le livre sur Amazon" class="button-img">
-            </a>
-          </div>
-        </div>
-      </div>
+      <img src="assets/images/banner_domino33.png" alt="Bienvenue Domino33" class="banner">
     </header>
 
     <section>
