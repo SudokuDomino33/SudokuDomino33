@@ -1,19 +1,162 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Easy and Advanced Sudoku Techniques – Domino33</title>
-  <meta name="description" content="Discover over 80 YouTube videos and a complete book dedicated to Sudoku solving techniques, from beginner to expert.">
-  <meta name="keywords" content="sudoku technique, easy sudoku, solve sudoku, sudoku youtube, advanced sudoku techniques, x-wing, swordfish, domino33, sudoku solver pro, sudoku book, beginner sudoku, expert sudoku, sudoku, sudoku grid, candidates, X-Wing, Naked Pairs, Hidden Pairs, sudoku solver, Y-Wing, W-Wing, X-cycles, unique rectangles, 3D-Medusa">
+  <title>Techniques Sudoku faciles et avancées – Domino33</title>
+  <meta name="description" content="Découvrez plus de 80 vidéos YouTube et un livre complet dédié aux techniques de résolution des grilles Sudoku, de débutant à expert.">
+  <meta name="keywords" content="technique sudoku, sudoku facile, résoudre sudoku, sudoku youtube, techniques sudoku avancées, x-wing, swordfish, domino33, sudoku solver pro, livre sudoku, sudoku débutant, sudoku expert, sudoku, grille sudoku, candidats, X-Wing, Paires isolées, paires cachées, sudoku solver, Y-Wing, W-Wing, X-cycles, rectangles uniques, 3D-Medusa">
   <meta name="author" content="Christian Peyré">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J80LJ3DBXB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J80LJ3DBXB');
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f5f7fa, #dfe9f3);
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+    }
+    header {
+      margin-bottom: 30px;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    @media (min-width: 768px) {
+      .banner {
+        max-height: none;
+        object-fit: contain;
+      }
+    }
+    h1, h2.section-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-family: 'Inter', sans-serif;
+    }
+    section {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+    .video-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 300px;
+      height: 170px;
+      border-radius: 8px;
+    }
+    .button-img {
+      height: 120px;
+      margin: 10px 10px 10px 0;
+      vertical-align: middle;
+      border: none;
+    }
+    a img {
+      text-decoration: none;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <div style="text-align: right; padding: 10px;">
-    <a href="index.html">FR</a>
+
+  <div class="lang-switch" style="position:absolute; top:20px; right:20px; display:flex; gap:10px;">
+    <button onclick="location.href='index.html'" style="background-color:#ffffff;border:1px solid #ccc;border-radius:6px;padding:5px 10px;cursor:pointer;font-size:14px;">FR</button>
+    <button onclick="location.href='index.html'" style="background-color:#ffffff;border:1px solid #ccc;border-radius:6px;padding:5px 10px;cursor:pointer;font-size:14px;">EN</button>
   </div>
-  <h1>Welcome to Domino33 website</h1>
-  <p>Full English content including customer reviews, videos, and book information...</p>
+
+  <div class="container">
+    <header>
+      <img src="assets/images/banner_domino33.png" alt="Bienvenue Domino33" class="banner">
+    </header>
+
+    <section>
+      <h2 class="section-title">Want to master Sudoku solving techniques?<br>You're in the right place!</h2>
+      <p>Indeed, my Domino33 channel, with over 80 videos online, is entirely dedicated to this discipline. It's tailor-made for beginners and advanced solvers alike.</p>
+      <p>You'll learn and gradually master Sudoku solving techniques thanks to <strong>Sudoku Solver Pro</strong>, which lets you study them both theoretically and practically. Its educational interface and powerful engine help solve all puzzles from level 5 to 12 and beyond.</p>
+      <p>It uses the following three types of solving techniques:</p>
+      <ul>
+        <li><strong>Basic techniques</strong> : naked pairs, hidden pairs, naked triples, hidden triples, box reduction, pointing pairs</li>
+        <li><strong>Advanced techniques</strong> : X-Wing, SwordFish, Y-Wing, W-Wing, XYZ-Wing, WXYZ-Wing, XY-Chain, X-Cycles, Unique-Rectangle, Hidden-Rectangle…</li>
+        <li><strong>Sophisticated techniques</strong> : Coloriage simple, 3D-Medusa, APE, BUG, AIC…</li>
+      </ul>
+      <p><strong>You can also buy my book which includes all these techniques.</strong></p>
+      <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+        <a href="https://www.youtube.com/@domino3348" target="_blank">
+          <img src="assets/images/youtube_subscribe.png" alt="Subscribe on YouTube" class="button-img">
+        </a>
+        <a href="https://www.amazon.fr/dp/2959903307" target="_blank">
+          <img src="assets/images/bouton_amazon_fr.png" alt="View the book on Amazon" class="button-img">
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">🌟 What readers are saying</h2>
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "Excellent tool to improve your Sudoku-solving approach. Access to Sudoku Solver is a real bonus and perfectly complements the very educational Domino33 YouTube channel."</strong></p>
+          <p><em>– Karine</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "I’m thrilled with the content, and the included software is exactly what I needed to improve in Sudoku."</strong></p>
+          <p><em>– Patrick</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "Domino33 is the reference! The channel explains techniques in a clear way. The book is a perfect companion and the solver is a gift for enthusiasts!"</strong></p>
+          <p><em>– Pascal</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "This book is a goldmine of the best Sudoku-solving methods found online. Very practical, clear, and comes with great software!"</strong></p>
+          <p><em>– jmdurand</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "I highly recommend the Domino33 YouTube channel. Its videos are a valuable complement to the techniques in the book. Excellent software!"</strong></p>
+          <p><em>– Edouard (Canada)</em></p>
+        </div>
+      </div>
+      <p style="margin-top: 15px; font-size: 13px;"><em>These reviews are from passionate readers on Amazon.</em></p>
+    </section>
+
+    <section>
+      <h2 class="section-title">📌 Here are 3 of my key videos to discover on my YouTube channel:</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/mrgkp4u_ZEU" title="Vidéo 1" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/-V-cN2TJx3c" title="Vidéo 2" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/DUo0nzUIVeQ" title="Vidéo 3" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">📘 Discover the book "SUDOKU – 40 Solving Techniques"</h2>
+      <p><em>This Memento is for all Sudoku lovers</em>, from beginners to experts, who want to improve their Sudoku solving skills.</p>
+      <p>It provides, in the form of sheets, <strong>40 solving techniques</strong> explaining how to solve the most complex puzzles up to the highest levels (<strong>9 et +</strong>) !</p>
+      <img src="assets/images/cover.jpg" alt="Couverture du livre" style="max-width: 200px; border-radius: 8px; margin-top: 10px;">
+      <br>
+      <a href="https://www.amazon.fr/dp/2959903307" target="_blank">
+        <img src="assets/images/bouton_amazon_fr.png" alt="Buy on Amazon" class="button-img" style="margin-top: 20px;">
+      </a>
+    </section>
+  </div>
 </body>
 </html>
