@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,6 +7,7 @@
   <meta name="description" content="Découvrez plus de 80 vidéos YouTube et un livre complet dédié aux techniques de résolution des grilles Sudoku, de débutant à expert.">
   <meta name="keywords" content="technique sudoku, sudoku facile, résoudre sudoku, sudoku youtube, techniques sudoku avancées, x-wing, swordfish, domino33, sudoku solver pro, livre sudoku, sudoku débutant, sudoku expert, sudoku, grille sudoku, candidats, X-Wing, Paires isolées, paires cachées, sudoku solver, Y-Wing, W-Wing, X-cycles, rectangles uniques, 3D-Medusa">
   <meta name="author" content="Christian Peyré">
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J80LJ3DBXB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -29,28 +29,12 @@
     }
     header {
       margin-bottom: 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
     .banner {
       width: 100%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    .lang-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    .lang-switch button {
-      background-color: #ffffff;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      padding: 5px 10px;
-      cursor: pointer;
-      font-size: 14px;
     }
     @media (min-width: 768px) {
       .banner {
@@ -95,17 +79,84 @@
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <button onclick="location.href='index_en.html'">EN</button>
+
+  <div class="lang-switch" style="position:absolute; top:20px; right:20px; display:flex; gap:10px;">
+    <button onclick="location.href='index.html'" style="background-color:#ffffff;border:1px solid #ccc;border-radius:6px;padding:5px 10px;cursor:pointer;font-size:14px;">FR</button>
+    <button onclick="location.href='index_en.html'" style="background-color:#ffffff;border:1px solid #ccc;border-radius:6px;padding:5px 10px;cursor:pointer;font-size:14px;">EN</button>
   </div>
+
   <div class="container">
     <header>
       <img src="assets/images/banner_domino33.png" alt="Bienvenue Domino33" class="banner">
     </header>
 
-    <!-- Le reste du contenu reste inchangé -->
-    <!-- (Tu pourras ensuite copier ce HTML et créer un index_en.html avec la version anglaise) -->
+    <section>
+      <h2 class="section-title">Vous souhaitez maîtriser les techniques de résolution des grilles Sudoku ?<br>Vous êtes au bon endroit !</h2>
+      <p>En effet, ma chaîne Domino33, avec plus de 80 vidéos en ligne, est entièrement consacrée à cette discipline. Elle est faite sur mesure pour vous, débutants ou confirmés.</p>
+      <p>Vous allez apprendre et maîtriser progressivement les techniques de résolution de SUDOKU grâce à <strong>Sudoku Solver Pro</strong>, qui permet de les étudier sur le plan théorique et pratique. Son graphisme particulièrement pédagogique et sa puissance de calcul permettent de résoudre toutes les grilles de niveaux 5 à 12 et +.</p>
+      <p>Pour cela, il applique les trois types de techniques de résolution suivantes :</p>
+      <ul>
+        <li><strong>Techniques de base</strong> : paires isolées, paires cachées, triplets isolés, triplets cachés, Box Reduction, Pointing Pairs</li>
+        <li><strong>Techniques élaborées</strong> : X-Wing, SwordFish, Y-Wing, W-Wing, XYZ-Wing, WXYZ-Wing, XY-Chain, X-Cycles, Unique-Rectangle, Hidden-Rectangle…</li>
+        <li><strong>Techniques sophistiquées</strong> : Coloriage simple, 3D-Medusa, APE, BUG, AIC…</li>
+      </ul>
+      <p><strong>Vous pouvez aussi acheter mon livre qui regroupe ces différentes techniques.</strong></p>
+      <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+        <a href="https://www.youtube.com/@domino3348" target="_blank">
+          <img src="assets/images/youtube_subscribe.png" alt="S'abonner à YouTube" class="button-img">
+        </a>
+        <a href="https://www.amazon.fr/dp/2959903307" target="_blank">
+          <img src="assets/images/bouton_amazon_fr.png" alt="Voir le livre sur Amazon" class="button-img">
+        </a>
+      </div>
+    </section>
 
+    <section>
+      <h2 class="section-title">🌟 Ce que les lecteurs en disent</h2>
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "Excellent outil pour progresser dans la démarche de résolution des Sudoku. L'accès à Sudoku Solver est un vrai plus et vient en complément de la chaîne YouTube Domino33 très pédagogique."</strong></p>
+          <p><em>– Karine</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "Je suis comblé par le contenu, et l'offre logiciel en complément. C'est ce qu'il me manquait pour progresser au SUDOKU."</strong></p>
+          <p><em>– Patrick</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "Domino33 est la référence ! La chaîne explique les techniques de manière pédagogique. Le livre complète à merveille et le solver est un cadeau pour les passionnés !"</strong></p>
+          <p><em>– Pascal</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "Ce livre est pour moi un condensé de ce qu'on peut trouver de mieux sur le net pour la résolution d'un Sudoku. Très pratique, clair, et avec un excellent logiciel en bonus !"</strong></p>
+          <p><em>– jmdurand</em></p>
+        </div>
+        <div style="background-color: #fff8e1; border-left: 6px solid #ffca28; padding: 15px; border-radius: 8px;">
+          <p><strong>⭐⭐⭐⭐⭐ "Je recommande la chaîne YouTube de Domino33. Ses vidéos sont un plus pour les différentes techniques du livre. Excellent logiciel !"</strong></p>
+          <p><em>– Edouard (Canada)</em></p>
+        </div>
+      </div>
+      <p style="margin-top: 15px; font-size: 13px;"><em>Les avis sont extraits de commentaires Amazon laissés par des lecteurs passionnés.</em></p>
+    </section>
+
+    <section>
+      <h2 class="section-title">📌 Voici notamment 3 de mes vidéos à découvrir sur ma chaîne YouTube :</h2>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/mrgkp4u_ZEU" title="Vidéo 1" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/-V-cN2TJx3c" title="Vidéo 2" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/DUo0nzUIVeQ" title="Vidéo 3" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">📘 Découvrez le livre "SUDOKU – 40 techniques de résolution"</h2>
+      <p><em>Ce Memento s'adresse à tous les passionnés</em>, des débutants aux expérimentés, qui souhaitent progresser dans la résolution de SUDOKU.</p>
+      <p>Vous trouverez sous forme de fiches, <strong>40 techniques de résolution</strong> qui vous expliquent comment solutionner des grilles des plus complexes jusqu’aux niveaux les plus élevés (<strong>9 et +</strong>) !</p>
+      <img src="assets/images/cover.jpg" alt="Couverture du livre" style="max-width: 200px; border-radius: 8px; margin-top: 10px;">
+      <br>
+      <a href="https://www.amazon.fr/dp/2959903307" target="_blank">
+        <img src="assets/images/bouton_amazon_fr.png" alt="Commander sur Amazon" class="button-img" style="margin-top: 20px;">
+      </a>
+    </section>
   </div>
 </body>
 </html>
